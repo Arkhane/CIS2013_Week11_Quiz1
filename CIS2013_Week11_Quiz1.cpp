@@ -7,16 +7,32 @@
 #include <iostream>
 #include <fstream>
 #include <ctime>
+#include <cstring>
 using namespace std;
 
 
-const int rows = 10;
-const int elements = 10;
-int matrix[rows][elements];
-
-
-void Clear()
+void Input()
 {
+	int a;
+	cout << "Pick a (row,computer) to set a grade on.." << endl;
+	cin >> a;
+
+	if (a == 1)
+		matrix[][] = player;
+
+}
+
+int main()
+{
+	int rows = 2;
+	int numberOfComputer = 10;
+	char matrix[rows][elements];
+
+	cout << "Please type number of rows..." << endl;
+	cin >> rows;
+	cout << "Please type number of computers..." << endl;
+	cin >> elements;
+
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < elements; j++)
@@ -25,31 +41,31 @@ void Clear()
 		}
 
 	}
-}
 
-void Show()
-{
+
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < elements; j++)
 		{
-			cout << matrix[i][j] << " ";
+
+
+
+			cout << matrix[i][j] << "computer ";
+
+
 		}
 		cout << endl;
 
 	}
-}
 
 
-int main()
-{
-	cout << "Please type number of rows..." << endl;
-	//cin >> numberOfRows;
-	//cout << "Please type number of computers..." << endl;
 
-	Clear();
-	Show();
 
-	systeam("pause");
+
+
 	return 0;
 }
+
+
+
+
